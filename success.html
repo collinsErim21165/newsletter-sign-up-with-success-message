@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="flex items-center justify-center mt-20">
+    <div class="flex flex-col items-center justify-center h-fit w-fit gap-3 border border-solid pl-6 pr-6 rounded-lg shadow-md pt-4 pb-4">
+        <img src="./assets/images/icon-success.svg" alt="">
+        <h1 class="font-bold text-2xl">Thanks for <br> subscribing!</h1>
+        <p> A confirmation email has been sent to <br> <span id="displayEmail"></span> 
+            Please open it and click <br> the button inside to confirm your subscription.</p>
+        <button class="w-72 h-10 bg-[rgb(36,39,66)] text-white rounded-lg border-none hover:bg-gradient-to-r from-[rgb(243,78,115)] to-[rgb(255,105,59)]"> <a href="./index.html">Dismiss Message</a></button>
+    </div>
+
+    <script>
+       var urlParams = new URLSearchParams(window.location.search);
+       var email = urlParams.get('email');
+       document.getElementById('displayEmail').textContent = email;
+    </script>
+</body>
+</html>

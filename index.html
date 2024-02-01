@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./src/input.css">
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+
+
+ <div id="MobileImg">
+    <img class=" sm:block md:hidden w-screen pb-5" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+ </div>
+ <div id="Main-Div" class="flex flex-row items-center justify-center gap-7">
+  <div>
+    <h1 class="font-bold text-4xl pb-3">Stay updated!</h1>
+    <p class="pb-3">Join 60,000+ product managers receiving monthly <br> updates on:</p>
+    <div class="flex flex-row items-center justify-start gap-3 pb-2">
+      <img class="w-5" src="./assets/images/icon-success.svg" alt="">
+      <p> Product discovery and building what matters</p>
+    </div>
+    <div class="flex flex-row items-center justify-start gap-3 pb-2">
+      <img  class="w-5" src="./assets/images/icon-success.svg" alt="">
+      <p> Measuring to ensure updates are a success</p>
+    </div>
+    <div class="flex flex-row items-center justify-start gap-3 pb-2">
+      <img  class="w-5" src="./assets/images/icon-success.svg" alt="">
+      <p> Measuring to ensure updates are a success</p>
+    </div>
+
+    <form id="emailForm" class="flex flex-col items-start justify-start pt-5">
+      <div class="flex flex-row items-center justify-between gap-12">
+        <label for="email"> Email address:</label>
+        <p id="errorMessage" class="text-red-600"></p>
+      </div>
+      <input class="md:w-72 md:h-10 w-96 h-16 pl-3 border-2 border-solid rounded-lg mb-3 " name="email" type="email" id="email" placeholder=" email@company.com" required>
+      <button class="md:w-72 md:h-10  w-96 h-16 bg-[rgb(36,39,66)] text-white rounded-lg border-none hover:bg-gradient-to-r from-[rgb(243,78,115)] to-[rgb(255,105,59)]" type="button" onclick="validateEmail()">Subscribe to monthly newsletter</button>
+    </form>
+  </div>
+  <div id="Img-Div">
+    <img class="h-screen hidden md:block" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+  </div>
+ </div>
+
+
+
+
+
+
+  <!-- Sign-up form start
+
+  Stay updated!
+
+  Join 60,000+ product managers receiving monthly updates on:
+
+  Product discovery and building what matters
+  Measuring to ensure updates are a success
+  And much more!
+
+  Email address
+  email@company.com
+
+  Subscribe to monthly newsletter
+
+   Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <!-- Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message -->
+
+  <!-- Success message end -->
+  
+ 
+  <script src="./script.js"></script>
+</body>
+</html>
